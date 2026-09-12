@@ -1,0 +1,94 @@
+html {
+    font-family: 'Raleway';
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+section {
+    font-size: 26px;
+    line-height: 50px;
+    margin-left: 40px;
+    padding: 20px;
+}
+
+hr {
+    width: 500px;
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+
+.one-hundred {
+    font-weight: 100;
+}
+
+.three-hundred {
+    font-weight: 300;
+}
+
+.five-hundred {
+    font-weight: 500;
+}
+
+.seven-hundred {
+    font-weight: 700;
+}
+
+.nine-hundred {
+    font-weight: 900;
+}
+
+#weight-one {
+    font-size: 15px;
+    line-height: 1px;
+    color:rgb(192, 192, 192);
+    font-style: normal;
+}
+
+#section-two {
+    font-style: italic;
+}
+
+.space-one{
+    letter-spacing: 1px;
+}
+
+.space-two{
+    letter-spacing: 2px;
+}
+
+.space-three{
+    letter-spacing: 3px;
+}
+
+.space-four{
+    letter-spacing: 4px;
+}
+
+.space-five{
+    letter-spacing: 5px;
+}
+
+.transform-one{
+    text-transform: lowercase;
+}
+
+.transform-two{
+    text-transform: uppercase;
+}
+
+.transform-three{
+    text-transform: capitalize;
+}
+
+.decoration-one {
+    text-decoration: underline;
+}
+
+.decoration-two {
+    text-decoration: overline;
+}
+
+.decoration-three {
+    text-decoration: line-through;
+}
