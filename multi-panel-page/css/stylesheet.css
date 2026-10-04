@@ -37,7 +37,6 @@ color: black;
 }
 
 header {
-    background-color: rgba(255,0,0);
     background-image: url(../images/banner.jpg);
     background-size: cover;
     background-position: center;
