@@ -1,0 +1,143 @@
+body {
+    font-family: "Archivo Narrow", sans-serif;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 16px;
+    color: white;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    color: white;
+}
+
+h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+.poop {
+color: black;
+}
+
+.content-column {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: rgba(255,0,0);
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header .content-column {
+    padding-top: 166px;
+    padding-bottom: 188px;
+}
+
+section:first-of-type {
+    background-color: rgb(146, 121, 164);
+    padding-top: 40.5px;
+    padding-bottom: 70px;
+}
+
+section:nth-of-type(2) {
+    background-color: rgb(209, 216, 79);
+    padding-top: 40.5px;
+    padding-bottom: 66px;
+}
+
+section:nth-of-type(3) {
+    background-color: rgb(160, 35, 62);
+    padding-top: 39px;
+    padding-bottom: 83px;
+}
+
+.first-pic {
+    float: right;
+    margin-top: 32px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    border: solid white 2px;
+}
+
+.content-column p {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 13.5px;
+    line-height: 25.2px;
+    margin-bottom: -15px;
+    color: white;
+}
+
+.text-content div {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+     max-width: 30ch; 
+
+}
+
+section:last-of-type .content-column p {
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 36.5px;
+  max-width: 60ch;
+  margin: 17px auto; 
+}
+  
+footer {
+    background-color: rgb(11, 28, 56);
+    padding-top: 9px;
+    color: white;
+    padding-bottom: 73px;  
+}
+
+/*--grid---*/
+
+.grid-container {
+  list-style: none;
+  padding: 0;
+  padding-top: 31px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 24px; 
+}
+
+.grid-container li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grid-container img {
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+.text-content h4 {
+  margin: 0;
+  font-size: 20px;
+}
