@@ -1,0 +1,195 @@
+
+
+
+body {
+  margin: 0;
+  
+  padding: 50px 8vw 100px;
+  padding-bottom: 80px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.recipe {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+
+
+h1 {
+  grid-column: 1;
+  font-size: 50px;
+  letter-spacing: -0.055em;
+  margin: -9px 0 40px;
+}
+
+.left {
+  grid-column: 1;
+}
+
+.right {
+  grid-column: 2;
+}
+
+.main-image {
+  width: 100%;
+  display: block;
+}
+
+.box-container {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.info-box {
+  flex: 1;
+  padding: 12px 5px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background-color: #94962c;
+  font-size: 14px;
+}
+
+.box-header {
+  text-transform: uppercase;
+}
+
+.box-sub {
+  text-transform: lowercase;
+  margin-top: 4px;
+}
+
+.text {
+  max-width: 620px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.text {
+  grid-column: 1;
+  grid-row: 2;
+  
+  max-width: 620px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* AAAAAHHHHHHHHHHH */
+
+h2 {
+  font-size: 42px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin: 70px 0 25px;
+  border-top: 2px solid #24251c;
+  padding-top: 50px;
+}
+
+h3 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+
+ul,ol {
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 9px;
+}
+
+#second-image {
+    width: 70%;
+    padding-top: 40px;
+    padding-left: 60px;
+}
+
+@media (max-width: 770px) {
+
+  body {
+    padding: 30px 6vw 60px;
+  }
+
+  .recipe {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .left,
+  .right {
+    display: contents;
+  }
+
+  h1 {
+    font-size: 38px;
+    margin: 0 0 25px;
+    grid-row: 1;
+  }
+
+  .main-image:first-of-type {
+    grid-row: 2;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .box-container {
+    grid-row: 3;
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    margin: 0 0 35px;
+  }
+
+  .info-box {
+    flex: 1;
+    padding: 10px 3px;
+    font-size: 11px;
+  }
+
+  .text {
+    grid-row: 4;
+    max-width: none;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 34px;
+    margin: 50px 0 20px;
+    padding-top: 30px;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  ul,
+  ol {
+    padding-left: 22px;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+
+#second-image {
+  width: 50%;
+  margin-left: 40px;
+  margin-top: -50px;
+  transform: rotate(270deg);
+}
+}
