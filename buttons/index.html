@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<script src="https://kit.fontawesome.com/b8854a0951.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Buttons — Lucia Thomas</title>
+		
+		<style>
+
+			body {
+				color: #333;
+				font-family: 'Open Sans', sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+
+			main {
+				margin: 40px;
+			}
+
+			h1 {
+			 	font-size: 30px;
+			 	margin-bottom: 40px;
+			}
+
+
+.button_container {
+    border: 1px solid #ddd;
+    margin: 0 10px 10px 0;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#btn_moo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 30px;
+    margin-top: 100px;
+    padding: 14px 28px;
+    background: white;
+    color: #588838;
+    font-weight: bold;
+    text-decoration: none;    
+    transition: all 0.4s ease;
+}
+
+#btn_moo .fa-droplet {
+    display: inline-block;
+}
+
+#btn_moo:hover .fa-droplet {
+    animation: drip 0.5s ease;
+}
+
+#btn_moo:hover {
+    color: rgb(148, 189, 120);
+    scale: 120%;
+}
+
+@keyframes drip {
+    0% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(10px);
+    }
+
+    60% {
+        transform: translateY(5px);
+    }
+
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#btn_kitten {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 105px;
+    padding: 14px 22px;
+    background: #f5a623;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+#btn_kitten:hover {
+    background: linear-gradient(135deg, #f5a623, #e85d04, #b83200);
+    transform: scale(1.05);
+}
+
+
+#btn_craigslist {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 105px;
+    width: 55px;
+    height: 55px;
+
+    border: 2px solid hsl(292, 74%, 43%);
+    border-radius: 50%;
+    color: hsl(292, 74%, 43%);
+    text-decoration: none;
+    overflow: hidden;
+    transition: width 0.4s ease;
+}
+
+#btn_craigslist span {
+    max-width: 0;
+    opacity: 0;
+    transition: max-width 0.4s ease, opacity 0.2s ease;
+}
+
+#btn_craigslist i {
+    font-size: 22px;
+    transition: transform 0.4s ease;
+}
+
+#btn_craigslist:hover {
+    width: 150px;
+    border-radius: 30px;
+}
+
+#btn_craigslist:hover span {
+    max-width: 90px;
+    opacity: 1;
+}
+
+#btn_oldnavy {
+    display: inline-block;
+
+    margin-top: 100px;
+    padding: 12px 22px;
+
+    background-color: #fff;
+    border: 2px solid #222;
+
+    color: #222;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+#btn_oldnavy:hover {
+    background-color: #222;
+    color: #fff;
+    letter-spacing: 2px;
+    transform: scale(1.05);
+}
+
+
+#btn_ideo {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    margin-top: 120px;
+    padding: 20px 65px;
+
+
+    color: rgb(36, 36, 36);
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#btn_ideo::before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 70px;
+    background-color: #5fbec1;
+    border-radius: 70px 70px 0 0;
+
+    bottom: -70px;
+    left: 50%;
+
+    transform: translateX(-50%);
+    transition: bottom 0.4s ease;
+
+    z-index: -1;
+}
+
+#btn_ideo:hover::before {
+    bottom: 0;
+}
+
+
+
+		</style>
+	</head>
+	<body>
+		
+		<main>
+
+			<h1>Button Styling — Lucia Thomas</h1>
+			
+			<div class="button_container">
+                <a href="https://www.moo.com/us/" target="_blank" id="btn_moo">MOO<i class="fa-solid fa-droplet"></i>
+                </a>
+			</div>
+
+			<div class="button_container">
+                <a href="https://www.explodingkittens.com/" target="_blank" id="btn_kitten">
+                <span>Exploding Kittens</span>
+                <i class="fa-solid fa-cat"></i>
+                </a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.craigslist.org/area/stlouis" target="_blank" id="btn_craigslist">
+                 <span>craigslist</span>
+                    <i class="fa-solid fa-peace"></i>
+                </a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://oldnavy.gap.com/" target="_blank" id="btn_oldnavy"><span>Old Navy</span></a>
+			</div>
+
+
+			<div class="button_container">
+				<a href="https://www.ideo.org/" target="_blank" id="btn_ideo">ideo</a>
+			</div>
+
+		</main>	
+
+	
+</body></html>
